@@ -484,6 +484,9 @@
 }
 
 @media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
   .header {
     display: flex;
     width: 300px;
@@ -563,5 +566,10 @@
     gap: 8px;
     border-radius: 48px;
     background: #F97247;
+  }
+  .main__centralwrapper {
+    width: 165px;
+    height: 659.512px;
+    transform: rotate(-90deg);
   }
 }/*# sourceMappingURL=style.css.map */
