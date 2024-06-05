@@ -472,3 +472,77 @@ $main-color: #F97247
 //     &:hover
 //         transition: 0.2s
 //         fill: #F99247
+
+
+
+@media ( max-width: 320px)
+    .header
+        display: flex
+        width: 300px
+        padding: 10px 14px
+        justify-content: space-between
+        align-items: center
+        border-radius: 64px
+        border: 2px solid #F97247
+        background: #191D0A
+        &__logo
+            width: 54px
+            height: 18px
+            flex-shrink: 0
+        &__menu
+            display: none
+        &__btns
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            gap: 4px
+            &-item
+                display: flex
+                padding: 8px
+                justify-content: center
+                align-items: center
+                gap: 8px
+                border-radius: 24px
+                border: 2px solid #EBF29D
+                background: #191D0A
+            &-descr
+                display: none
+    .main
+        &__leftwrapper
+            padding-top: 70px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 12px
+            &_title
+                color: #FFF
+                text-align: center
+                font-family: Lexend
+                font-size: 46px
+                font-style: normal
+                font-weight: 500
+                line-height: 50px
+                span
+                    color: #F97247
+                    font-family: Lexend
+                    font-size: 46px
+                    font-style: normal
+                    font-weight: 500
+                    line-height: 50px
+            &_subtitle
+                color: rgba(255, 255, 255, 0.60)
+                text-align: center
+                font-family: Lexend
+                font-size: 20px
+                font-style: normal
+                font-weight: 500
+                line-height: 26px
+            &_btn
+                display: flex
+                width: 300px
+                padding: 15px 20px
+                justify-content: center
+                align-items: center
+                gap: 8px
+                border-radius: 48px
+                background: #F97247
