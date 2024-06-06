@@ -587,6 +587,7 @@
 @media (max-width: 320px) {
   .container {
     width: 300px;
+    height: 100%;
   }
   .header {
     display: flex;
@@ -683,6 +684,7 @@
     flex-direction: column;
     align-items: center;
     gap: 18px;
+    margin: 0 auto;
   }
   .main__rightwrapper_title {
     color: #FFF;
@@ -693,7 +695,6 @@
     line-height: 40px;
   }
   .main__rightwrapper_area {
-    width: 300px;
     height: 421px;
     border-radius: 50px;
     border: 2px solid #F97247;
@@ -711,6 +712,24 @@
     border-radius: 40px;
     background: #311212;
   }
+  .main__rightwrapper_area_item_title {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .main__rightwrapper_area_item_subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-feature-settings: "liga" off;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 16px;
+  }
   .main__rightwrapper_area_item_one {
     display: flex;
     padding: 15px 35px;
@@ -719,5 +738,27 @@
     align-self: stretch;
     border-radius: 40px;
     background: #F97247;
+  }
+  .footer {
+    display: flex;
+    width: 320px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 50px 50px 0px 0px;
+    border-top: 2px solid #F97247;
+    border-right: 2px solid #F97247;
+    border-left: 2px solid #F97247;
+    background: #311212;
+  }
+  .footer__pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    align-self: stretch;
   }
 }/*# sourceMappingURL=style.css.map */
