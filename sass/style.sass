@@ -626,12 +626,15 @@ $main-color: #F97247
                 border-radius: 24px
                 border: 2px solid #EBF29D
                 background: #191D0A
+                width: 35px
+                height: 35px
             &-item2
                 display: none
             &-descr
                 display: none
     .main
-        
+        width: 320px
+        height: 1438px
         &__leftwrapper
             padding-top: 70px
             display: flex
@@ -756,8 +759,23 @@ $main-color: #F97247
         background: #311212
         &__pages
             display: flex
+            width: 280px
             flex-direction: column
-            justify-content: center
             align-items: flex-start
-            gap: 2px
-            align-self: stretch
+            gap: 20px
+            &_licences
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-start
+                gap: 2px
+                align-self: stretch
+                a
+                    &:last-child
+                        margin: 0
+            &_social
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                gap: 8px
+                align-self: stretch

@@ -43,7 +43,7 @@ button.addEventListener('click', (e) => {
     
 })
 
-const element = document.getElementById('lastBlog')
+// const element = document.getElementById('lastBlog')
 const item = document.querySelector('.main__rightwrapper_area_item_one')
 
 item.addEventListener('click', () => {
@@ -54,3 +54,14 @@ item.addEventListener('click', () => {
     })
 })
 
+
+
+const display320 = window.innerWidth;
+window.addEventListener('load', () => {
+    const element = document.createElement('div');
+    if(window.innerWidth === '320') {
+        element.innerHTML = `
+        <span>Terms and Conditions</span>
+        `
+    }
+})
