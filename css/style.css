@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.hamburger {
+  display: none;
+}
+
 .active {
   background-color: #F99247;
   transition: background 0.4s, color 0.25s;
@@ -458,6 +462,9 @@
   font-weight: 400;
   line-height: 20px;
 }
+.footer__pages_licences_new {
+  display: none;
+}
 .footer__pages_licences a {
   color: #FFF;
   text-align: center;
@@ -780,6 +787,9 @@
     align-items: flex-start;
     gap: 2px;
     align-self: stretch;
+  }
+  .footer__pages_licences_new {
+    display: block;
   }
   .footer__pages_licences a:last-child {
     margin: 0;

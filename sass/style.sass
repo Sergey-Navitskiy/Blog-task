@@ -19,7 +19,8 @@ body
 
 
 $main-color: #F97247
-
+.hamburger
+    display: none
 .active
     background-color: #F99247
     transition: background 0.4s, color 0.25s
@@ -418,7 +419,6 @@ $main-color: #F97247
             flex-direction: column
             align-items: flex-end
             gap: 14px
-            
             &_buttons
                 position: relative
                 display: flex
@@ -446,6 +446,8 @@ $main-color: #F97247
                 line-height: 20px
             
         &_licences
+            &_new
+                display: none
             a
                 color: #FFF
                 text-align: center
@@ -468,10 +470,7 @@ $main-color: #F97247
                     line-height: 20px
                     text-decoration-line: underline
 
-// .active
-//     &:hover
-//         transition: 0.2s
-//         fill: #F99247
+
 // .sidepanel
 //     position: fixed
 //     top: 230px
@@ -770,6 +769,8 @@ $main-color: #F97247
                 align-items: flex-start
                 gap: 2px
                 align-self: stretch
+                &_new
+                    display: block
                 a
                     &:last-child
                         margin: 0
