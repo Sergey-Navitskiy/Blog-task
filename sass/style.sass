@@ -25,18 +25,13 @@ $main-color: #F97247
         display: none
     &_long
         display: none
-.active
+.actives
     background-color: #F99247
     transition: background 0.4s, color 0.25s
 .inactive
     transition: background 0.4s, color 0.25s
     background: #191D0A
-    // transition: transform 0.3s linear
 
-// @keyframes spin 
-//     transform: translate3d(0, -100%, 0)
-//     transform: translate3d(0, 100%, 0)
-//     transform: translate3d(0, -100%, 0)
 @keyframes upDownCycleLineTwo
     0%
         transform: translateY(0)
@@ -183,7 +178,6 @@ $main-color: #F97247
             gap: 30px
             padding-bottom: 20px
             animation: upDownCycleLineOne 2.7s infinite ease-in-out
-            
             &::before
                 content: ""
                 position: absolute
@@ -191,7 +185,6 @@ $main-color: #F97247
                 left: 0
                 right: 0
                 bottom: 0
-                // background: linear-gradient(to bottom, rgba(25, 29, 10, 1) 0%, rgba(25, 29, 10, 0) 400px, rgba(25, 29, 10, 0) calc(100% - 400px), rgba(25, 29, 10, 1) 100%)
                 pointer-events: none
             &_item
                 opacity: 0.2
@@ -235,10 +228,6 @@ $main-color: #F97247
     &__rightwrapper
         padding-top: 140px
         margin-left: 50px
-        // padding-left: 64px
-        // position: absolute
-        // left: 850px
-        // top: 300px
         display: flex
         width: 531px
         flex-direction: column
@@ -251,7 +240,6 @@ $main-color: #F97247
             font-style: normal
             font-weight: 600
             line-height: 40px
-            // margin-bottom: 24px
         &_area
             height: 595px
             align-self: stretch
@@ -259,7 +247,7 @@ $main-color: #F97247
             border: 3px solid #F97247
             background: rgba(255, 255, 255, 0.12)
             backdrop-filter: blur(10px)
-            padding: 24px 40px 0 24px //24px 40px 0 24px
+            padding: 24px 40px 0 24px
             overflow-y: scroll
             scroll-behavior: smooth
             &::-webkit-scrollbar
@@ -428,7 +416,6 @@ $main-color: #F97247
                 display: flex
                 align-items: center
                 gap: 8px
-                
                 &_item
                     position: relative
                     &_bg
@@ -448,7 +435,6 @@ $main-color: #F97247
                 font-style: normal
                 font-weight: 400
                 line-height: 20px
-            
         &_licences
             &_new
                 display: none
@@ -475,27 +461,6 @@ $main-color: #F97247
                     text-decoration-line: underline
 
 
-// .sidepanel
-//     position: fixed
-//     top: 230px
-//     left: 50px
-//     display: flex
-//     flex-direction: column
-//     justify-content: space-between
-//     align-items: center
-//     height: 340px
-//     z-index: 3
-//     &__divider
-//         width: 2px
-//         height: 70px
-//         background-color: #000
-//     &__text 
-//         height: 150px
-//         width: 25px
-//         span 
-//             transform: rotate(-90deg) translate(-30%,-260%)
-//             display: block
-//             width: 150px
 
 
 .menu
@@ -503,7 +468,7 @@ $main-color: #F97247
     top: 0
     left: -100%
     width: 100%
-    height: 100vh
+    height: 150vh
     z-index: 10
     visibility: hidden
     opacity: 0
@@ -514,11 +479,11 @@ $main-color: #F97247
         opacity: 1
     &__block
         position: relative
-        width: 345px
-        background-color: $main-color
-        height: 100%
+        width: 320px
+        background-color: #191D0A
+        height: 150%
         padding-top: 140px
-        padding-left: 40px
+        // padding-left: 40px
         transition: all .6s
         z-index: 10
     &__close 
@@ -529,107 +494,41 @@ $main-color: #F97247
     &__list 
         list-style-type: none
         padding-left: 35px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 5px
+        width: 3
     &__link 
         position: relative
         font-weight: bold
         font-size: 24px
         line-height: 36px
         margin-bottom: 15px
-        &:before
-            content: ''
-            position: absolute
-            left: -35px
-            top: 10px
-            width: 15px
-            height: 15px
-            border-radius: 100%
-            border: 1px solid #000000
-            transition: all 0.6s
+        display: flex
+        width: 260px
+        padding: 13px 20px
+        align-items: center
+        gap: 8px
+        border-radius: 28px
+        border: 2px solid #F97247
+        background: #191D0A
+        // &:before
+        //     content: ''
+        //     position: absolute
+        //     left: -35px
+        //     top: 10px
+        //     width: 15px
+        //     height: 15px
+        //     border-radius: 100%
+        //     border: 1px solid #000000
+        //     transition: all 0.6s
         &:hover 
             &:before 
                 background-color: #fff
         a 
             color: #fff
-    &__social 
-        position: absolute
-        bottom: 50px
-        left: 50%
-        transform: translateX(-50%)
-        width: 90px
-        display: flex
-        justify-content: space-between
-        align-items: center
-    &__overlay 
-        position: fixed
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        background-color: #fff
-        opacity: .75
-
-
-.menu
-    position: fixed
-    top: 0
-    left: -100%
-    width: 100%
-    height: 100vh
-    z-index: 10
-    visibility: hidden
-    opacity: 0
-    transition: all .6s
-    &.active 
-        left: 0
-        visibility: visible
-        opacity: 1
-    &__block
-        position: relative
-        width: 345px
-        background-color: $main-color
-        height: 100%
-        padding-top: 140px
-        padding-left: 40px
-        transition: all .6s
-        z-index: 10
-    &__close 
-        position: absolute
-        top: 25px
-        right: 25px
-        cursor: pointer
-    &__list 
-        list-style-type: none
-        padding-left: 35px
-    &__link 
-        position: relative
-        font-weight: bold
-        font-size: 24px
-        line-height: 36px
-        margin-bottom: 15px
-        &:before
-            content: ''
-            position: absolute
-            left: -35px
-            top: 10px
-            width: 15px
-            height: 15px
-            border-radius: 100%
-            border: 1px solid #000000
-            transition: all 0.6s
-        &:hover 
-            &:before 
-                background-color: #fff
-        a 
-            color: #fff
-    &__social 
-        position: absolute
-        bottom: 50px
-        left: 50%
-        transform: translateX(-50%)
-        width: 90px
-        display: flex
-        justify-content: space-between
-        align-items: center
+            text-decoration: none
     &__overlay 
         position: fixed
         top: 0
