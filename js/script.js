@@ -56,6 +56,8 @@ item.addEventListener('click', () => {
 
 
 
+
+
 const display320 = window.innerWidth;
 window.addEventListener('load', () => {
     const element = document.createElement('div');
@@ -114,3 +116,16 @@ new MenuCard(
     9,
     '.menu .container',
 ).render();
+
+
+const hamburger = document.querySelector(".hamburger"),
+  menu = document.querySelector(".menu");
+closeElem = document.querySelector(".menu__close");
+
+hamburger.addEventListener("click", function () {
+  menu.classList.add("active");
+});
+
+closeElem.addEventListener("click", function () {
+  menu.classList.remove("active");
+});
