@@ -486,10 +486,44 @@ $main-color: #F97247
         // padding-left: 40px
         transition: all .6s
         z-index: 10
+    &__button
+        display: flex
+        width: 300px
+        margin-left: 10px
+        margin-bottom: 5px
+        padding: 13px 20px
+        justify-content: center
+        align-items: center
+        gap: 8px
+        border-radius: 24px
+        border: 2px solid #EBF29D
+        background: #311212
+        &_descr
+            color: #FFF
+            text-align: center
+            font-family: Lexend
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 20px
+        &_orange
+            background: #F97247
+            display: flex
+            width: 300px
+            margin-left: 10px
+            margin-bottom: 5px
+            padding: 13px 20px
+            justify-content: center
+            align-items: center
+            gap: 8px
+            border-radius: 24px
+            border: 2px solid #EBF29D
+            
+
     &__close 
-        position: absolute
-        top: 25px
-        right: 25px
+        // position: absolute
+        // top: 25px
+        // right: 25px
         cursor: pointer
     &__list 
         list-style-type: none
@@ -529,6 +563,11 @@ $main-color: #F97247
         a 
             color: #fff
             text-decoration: none
+            font-family: Lexend
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 24px
     &__overlay 
         position: fixed
         top: 0
@@ -577,6 +616,18 @@ $main-color: #F97247
         border: 2px solid #F97247
         background: #191D0A
         // padding-left: 12px
+        &_overlay
+            position: absolute
+            left: 10px
+            top: 10px
+            display: flex
+            width: 300px
+            padding: 10px 14px
+            justify-content: space-between
+            align-items: center
+            border-radius: 64px
+            border: 2px solid #F97247
+            background: #191D0A
         &__logo
             width: 54px
             height: 18px
