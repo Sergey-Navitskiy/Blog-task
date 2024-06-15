@@ -587,6 +587,9 @@ $main-color: #F97247
         width: 1000px
         &__logo
             display: none
+    .banner
+        &_maskright
+            display: none
     .main
         &__leftwrapper
             width: 400px
@@ -595,7 +598,7 @@ $main-color: #F97247
                 span
                     font-size: 35px
         &__centralwrapper
-            // display: none
+            display: none
             width: 165px
             height: 659.512px
             transform: rotate(-90deg)
@@ -611,6 +614,52 @@ $main-color: #F97247
                     padding: 10px 40px
                     &_one
                             padding: 10px 40px
+
+@media (max-width: 996px)
+    .container
+        max-width: 776px
+        padding-right: 0px
+        padding-left: 0px
+    .header
+        &__menu
+            gap: 13px
+            &-item
+                font-size: 12px
+        &__btns
+            width: 250px
+            gap: 11px
+            &-item2
+                padding: 11px
+            &-item3
+                padding: 11px
+            &-descr
+                font-size: 12px
+    .main
+        &__leftwrapper
+            gap: 18px
+            &_title    
+                height: 70px
+            span
+            &_subtitle
+                font-size: 20px
+            &_btn
+                padding: 15px 60px
+        &__rightwrapper
+            margin-left: 0px
+            width: 350px
+            height: 600px
+            &_area
+                padding: 15px 2px 0 15px
+                border-radius: 95px
+                &_item
+                    padding: 10px 40px
+                    &_title
+                        font-size: 17px
+                        margin-bottom: 1px
+
+                
+
+            
 
 
 @media ( max-width: 320px)
