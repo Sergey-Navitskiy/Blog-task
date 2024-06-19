@@ -606,8 +606,14 @@
 }
 
 @media (max-width: 320px) {
+  .main {
+    overflow: hidden;
+  }
   .container {
     width: 300px;
+  }
+  .banner_maskright {
+    display: none;
   }
   .hamburger {
     padding: 4px;
